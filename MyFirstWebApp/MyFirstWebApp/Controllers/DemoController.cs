@@ -11,14 +11,7 @@ namespace MyFirstWebApp.Controllers
         // GET: Demo
         public ActionResult Index()
         {
-            TempData["Name"] = "陳小強";
             ViewData["Name"] = "陳小強";
-            ViewBag.Name = "陳小強";
-            return RedirectToAction("ShowTempData");
-        }
-
-        public ActionResult ShowTempData()
-        {
             return View();
         }
 

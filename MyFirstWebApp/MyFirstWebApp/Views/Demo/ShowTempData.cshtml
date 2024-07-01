@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "ShowTempData";
+}
+
+<h2>ShowTempData</h2>
+
+<div>
+    [使用TempData傳遞]
+    我的名字是: @TempData["Name"]
+    <br />
+    [使用ViewData傳遞]
+    我的名字是: @ViewData["Name"]
+    <br />
+    [使用ViewBag傳遞]
+    我的名字是: @ViewBag.Name
+
+</div>

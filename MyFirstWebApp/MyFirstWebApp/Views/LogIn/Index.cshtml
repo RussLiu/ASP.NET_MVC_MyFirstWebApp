@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>LogIn Page</h2>
+
+<div class="container">
+    <form method="get" action="~/login/verify">
+        <label>Account</label>
+        <br />
+        <input type="text" name="account" />
+        <br /><br />
+        <label>Password</label>
+        <br />
+        <input type="text" name="password" />
+        <br /><br />
+        <input type="submit" name="submit" value="Login" class="btn btn-primary" />
+    </form>
+</div>

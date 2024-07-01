@@ -1,0 +1,21 @@
+﻿@model MyFirstWebApp.Models.MemberInfoViewModel
+
+@{
+    ViewBag.Title = "ShowShoppingList";
+}
+
+<h2>ShowShoppingList</h2>
+
+<div>
+    會員編號: @Model.Member.Id
+    <br />
+    會員姓名: @Model.Member.Name
+    <br />
+    <hr />
+    <ul>
+        @foreach (var item in Model.Products)
+        {
+            <li>商品編號: @item.Number 品名: @item.Name 價格: @item.Price </li>
+        }
+    </ul>
+</div>
